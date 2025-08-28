@@ -20,10 +20,10 @@ let city = null // null datatype
 
 // Primitive Datatypes ->
 // number -> 2 to power 53
-// bigint
+// bigint -> big scientific numbers which are not handled by number
 // string -> ""(prefered) or ''
 // boolean -> true or false
-// null -> this is "standalone value" and "datatypes also" (representation of empty value) (Khali hai)
+// null -> this is "standalone value" and "datatypes also" (representation of empty value) (Khali hai) (example -> temperature)
 // undefined -> means no value is assigned right now
 // symbol -> unique (components specially in react.js like framework)
 

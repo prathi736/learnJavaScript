@@ -69,13 +69,15 @@ let str3 = str1 + str2
 
 // console.log(3 + 4 * 5 % 3)
 
-// console.log(+true)
-// console.log(+"")
+// console.log(+true) // 1
+// console.log(+"") // 0
 
 
 let num1, num2, num3
+// Avoid this kind of things
 num1 = num2 = num3 = 2+2
 
+// Post & Pre Increment
 let counter = 100
 counter++
 console.log(counter);
