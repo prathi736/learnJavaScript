@@ -52,3 +52,33 @@ console.log(typeof myFunction);
 let game = 3
 // JavaScript is weak typed language because:-
 // it allows to perform operations between different data types without explicitly converting them
+
+
+
+
+// =======================================================
+
+// Stack Memory (Primitive data type) -> [Declared variable ka copy milta hai]
+// Heap Memory (Non Primitive Data Type) -> [Here, original value ka reference milta hai]
+
+// Stack Example
+let myName = "Pulkit"
+let homeName = myName
+
+homeName = "Billu"
+
+console.log(homeName)
+console.log(myName)
+
+
+// Heap Example
+let userOne = {
+    houseNo: "1",
+    age: 12
+}
+
+let userTwo = userOne
+userTwo.age = 15
+console.log(userOne.age)
+console.log(userTwo.age)
+

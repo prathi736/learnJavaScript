@@ -9,7 +9,7 @@ let valueInNumber = Number(scoreCard)
 
 //console.log(valueInNumber); // Output -> NaN (Not a Number) -> it is also a type
 // Be careful while using NaN
-// Type of NaN is Number
+// Type of NaN is "Number"
 
 
 //console.log(typeof valueInNumber);

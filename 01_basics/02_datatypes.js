@@ -19,7 +19,7 @@ let city = null // null datatype
 // Range of datatypes:-
 
 // Primitive Datatypes ->
-// number -> 2 to power 53
+// number -> 2 to power 53 (includes integer and floating point numbers)
 // bigint -> big scientific numbers which are not handled by number
 // string -> ""(prefered) or ''
 // boolean -> true or false
