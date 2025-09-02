@@ -38,7 +38,7 @@ const myFunction = function(){
 
 // VIP
 // Non primitive -> typeof se check karne par object type aata hai
-// Return types of non primitive data types in JavaScript
+// Return types of non primitive data types in JavaScript ->
 // Array -> object, Objects -> object, Functions -> object function
 
 console.log(typeof myFunction);
