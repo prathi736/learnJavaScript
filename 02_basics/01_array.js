@@ -5,7 +5,7 @@
 
 const arr = [0, 1, 2, 3, 4, 5, 6]
 const heroes = ["superman", "batman"]
-// Another way to declare array
+// Another way to declare array (using objects)
 const arr2 = new Array(1, 2, 3, 5, 6)
 
 console.log(arr[3]);
@@ -16,7 +16,7 @@ console.log(arr[3]);
 // arr.push(10)
 // arr.pop()
 
-// Unshift -> shifts all the elements of array & add new element in the starting of the array
+// Unshift -> shifts all the elements of array & add new element in the starting of the array (not so optimized)
 
 // arr.unshift(11)
 // arr.shift()
@@ -29,9 +29,9 @@ console.log(arr[3]);
 // Mostly used method of array
 const newArr = arr.join() // binds the array elements & converts to string
 
-// console.log(arr);
-// console.log(newArr);
-// console.log(typeof newArr); // return a string
+console.log(arr);
+console.log(newArr);
+console.log(typeof newArr); // return a string
 
 // slice & splice
 // Slice -> does not manipulate the original array
