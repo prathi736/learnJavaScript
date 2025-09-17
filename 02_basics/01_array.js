@@ -18,8 +18,8 @@ console.log(arr[3]);
 
 // Unshift -> shifts all the elements of array & add new element in the starting of the array (not so optimized)
 
-// arr.unshift(11)
-// arr.shift()
+// arr.unshift(11) // add element to the first index of array
+// arr.shift() // remove first index element of array
 
 // console.log(arr.includes(9));
 // console.log(arr.indexOf(9));
