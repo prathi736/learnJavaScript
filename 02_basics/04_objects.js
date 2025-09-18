@@ -79,3 +79,32 @@ console.log(Object.entries(accUser)); // returns array inside array of key:value
 
 // Returns a boolean value whether the property exist or not in the given object
 console.log(accUser.hasOwnProperty('id'));
+
+
+
+// De-structuring of Objects (mostly used on APIs)
+const course = {
+    coursename: "python",
+    price: "333",
+    courseUsername: "Pulkit"
+}
+
+// Accessing Object Properties
+// course.courseUsername
+
+// Now de-structuring Objects (most people use it)
+// const {courseUsername} = course
+// Giving another name to courseUsername
+const {courseUsername: userName} = course
+// console.log(courseUsername);
+console.log(userName);
+
+// De-structuring is mostly used in Reactjs at the time of props
+
+
+// In JSON format data comes from APIs
+// {
+//     "name": "Pulkit",
+//     "userName": "billu",
+//     "price": "free"
+// }
