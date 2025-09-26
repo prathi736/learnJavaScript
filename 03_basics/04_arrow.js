@@ -6,6 +6,7 @@ const user = {
         console.log(`${this.username}, welcome to website`);
         // this.username -> refers to current context
         console.log(this); // refers to current context or values
+        // only 'this' will return whole object values
         
     }
 }
