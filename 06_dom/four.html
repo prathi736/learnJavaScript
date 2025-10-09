@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: #ffffff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+
+    // Ways to edit values
+
+    // Not a optimized method to add elements
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        // every time innerHTML is traversing trees till end 
+        // which not a good thing as there will 1Lac nodes.
+        // this is an expensive operation
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("java")
+
+    // Optimized function to add language
+    // More professional code
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        // More optimized method
+        // using createTextNode -> node is directly created
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+    addOptiLanguage("C++")
+
+
+    // Editing the above values
+
+    // li:nth-child(2) -> selecting 2nd element from n elements
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondValue.innerHTML = "Mojo" // Not so optimized
+    // Second approach
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+
+    // another editing
+    const firstLang = document.querySelector("li:first-child") 
+    firstLang.outerHTML = "<li>TS</li>"
+
+    // remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+    
+</script>
+</html>
